@@ -1,12 +1,11 @@
 body {
 	background-color: #F0F8FF;
-	text-align: center;
 	margin: auto;
 	font-size:14px;
 }
 
 h1 {
-	color: rgba(8,141,165,1);
+	color: #696969;
 	margin: auto;
 	text-align: center;
 }
@@ -17,9 +16,11 @@ h2 {
     text-align: center
 }
 
-.container {
-    text-align: center;
-    margin: auto;
+label {
+    width:100;
+    clear:inherit;
+    text-align:left;
+    padding:inherit;
 }
 
 .button {
