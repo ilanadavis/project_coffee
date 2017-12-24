@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	         <!-- Required meta tags -->
+		<meta charset="utf-8">
+		<title>Project Coffee</title>
+		<link rel="stylesheet" href="./css/paf_css.css">
+	</head>
+	<body>
+		<h1>People Action Form</h1>
+		<h2>New Hire</h2>
+        <form action="/my-handling-form-page" method="post">
+            <div class="field">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+            </div>
+            <div class="field">
+                <label for="email">Personal E-mail:</label>
+                <input type="email" id="email" name="user_email">
+            </div>
+            <div class="field">
+                <label for="phone">Phone Number:</label>
+                <textarea id="phone" name="phone_number"></textarea>
+            </div>
+            <div class="field">
+                <label for="position">Job Title:</label>
+                <textarea id="position" name="position"></textarea>
+            </div>
+            <div class="field">
+                <label for="mgr_name">Manager Name:</label>
+                <textarea id="mgr_name" name="mgr_name"></textarea>
+            </div>
+            <div class="field">
+                <label for="hire_date">Hire Date:</label>
+                <textarea id="hire_date" name="hire_date"></textarea>
+            </div> 
+            <div class="field">
+                <label for="salary">Annual Base Salary:</label>
+                <textarea id="salary" name="salary"></textarea>
+            </div>             
+            <div class="field">
+                <label for="variable">Variable Salary:</label>
+                <textarea id="variable" name="variable"></textarea>
+            </div>             
+            <div class="field">
+                <label for="total_salary">Total Annual Salary:</label>
+                <textarea id="total_salary" name="total_salary"></textarea>
+            </div>             
+        </form>
+        <div>
+          <button class="button" type="submit">Submit</button>
+        </div>
+	</body>
+</html>
