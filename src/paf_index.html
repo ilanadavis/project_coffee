@@ -9,6 +9,8 @@
 	<body>
 		<h1>People Action Form</h1>
 		<h2>New Hire</h2>
+		    <!-- Field names -->
+        <div container="new_hire">
         <form action="/my-handling-form-page" method="post">
             <div class="field">
                 <label for="name">Name:</label>
@@ -20,7 +22,7 @@
             </div>
             <div class="field">
                 <label for="phone">Phone Number:</label>
-                <textarea id="phone" name="phone_number"></textarea>
+                <input type="tel" name="phone_number"></textarea>
             </div>
             <div class="field">
                 <label for="position">Job Title:</label>
@@ -32,21 +34,22 @@
             </div>
             <div class="field">
                 <label for="hire_date">Hire Date:</label>
-                <textarea id="hire_date" name="hire_date"></textarea>
-            </div> 
+                <input type="date" name="hire_date"></textarea>
+            </div>
             <div class="field">
                 <label for="salary">Annual Base Salary:</label>
-                <textarea id="salary" name="salary"></textarea>
+                <input type="text" name="salary"></textarea>
             </div>             
             <div class="field">
                 <label for="variable">Variable Salary:</label>
-                <textarea id="variable" name="variable"></textarea>
+                <input type="text" name="variable"></textarea>
             </div>             
             <div class="field">
                 <label for="total_salary">Total Annual Salary:</label>
-                <textarea id="total_salary" name="total_salary"></textarea>
+                <input type="text" name="total_salary"></textarea>
             </div>             
         </form>
+        </div>
         <div>
           <button class="button" type="submit">Submit</button>
         </div>
