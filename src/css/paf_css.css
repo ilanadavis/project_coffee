@@ -35,6 +35,7 @@ table {
 	border-radius: 50%;
 	background: #D1a827;
 	border: solid #D1a827;
+	text-decoration: none;
 }
 
 .button:hover {
@@ -42,4 +43,6 @@ table {
 	background-color: #687672;
 	box-shadow: inset 0 0 5px #687672;
 	border: solid #687672;
+	text-decoration: underline;
 }
+
