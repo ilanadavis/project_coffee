@@ -55,7 +55,3 @@ table {
 input: invalid {
 	border: 2px dashed red;
 }
-
-.abbr {
-	font-color: red;
-}
