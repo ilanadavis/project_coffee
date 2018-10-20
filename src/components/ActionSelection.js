@@ -1,12 +1,20 @@
 import React from 'react';
 
 class ActionSelection extends React.Component {
+ actionSelection = React.createRef();
+ 
+  goToAction = (event) => {
+   event.preventDefault();
+   const actionSelected = this.actionSelection.value;
+   this.props.history.push(`/action/${actionSelected}`);
+  }
+ 
  render() {
    return (
     <React.Fragment> { /* can also import fragment and then remove react. in this line */ }
-      <button type="submit" className="paf-selection" href="paf_hire_index.html">New Hire</button><br />
-      <button type="submit" className="paf-selection" href="paf_change_index.html">Change</button><br />
-      <button type="submit" className="paf-selection" href="paf_termination_index.html">Term</button>
+      <button onSubmit={this.goToAction} type="submit" className="actionSelected">New Hire</button><br />
+      <button onSubmit={this.goToAction} type="submit" className="actionSelected">Change</button><br />
+      <button onSubmit={this.goToAction} type="submit" className="actionSelected">Term</button>
     </React.Fragment>
      )
  } 
